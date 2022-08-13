@@ -1,10 +1,13 @@
+import {AppFooter} from './cmps/AppFooter'
+import {AppHeader} from './cmps/AppHeader'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi react</h1>
-    </div>
-  );
+    <section className="App">
+      <AppHeader />
+      <AppFooter />
+    </section>
+  )
 }
 
-export default App;
+export default App
