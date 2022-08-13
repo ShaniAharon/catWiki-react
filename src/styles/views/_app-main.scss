@@ -1,0 +1,234 @@
+.a-link {
+  align-items: center;
+  display: flex;
+  font-size: 10px;
+  height: 52px;
+  text-decoration: none;
+  white-space: nowrap;
+  span {
+    margin-top: 1em;
+    font-weight: 600;
+  }
+}
+
+.my-list > li {
+  margin-left: 0.7em; // maybe calc the  left padding
+  &:not(:last-child) {
+    text-decoration: underline;
+  }
+  &:not(:first-child, :last-child) {
+    margin-inline-start: 2.7em;
+    margin-inline-end: 1em;
+  }
+}
+
+.my-list-container {
+  position: sticky;
+  .plus-black {
+    position: relative;
+    img {
+      position: absolute;
+      top: 2.1em;
+      left: -0.8em;
+      width: 2.8em;
+    }
+  }
+  // box-shadow: 0 4px 12px #00000014, 0 0 1px #0100001a;
+}
+
+.my-list :first-child a {
+  box-shadow: inset 0 -2px #111;
+  color: #111;
+  pointer-events: none;
+}
+
+.my-list :first-child {
+  padding-left: 0;
+}
+
+.data-container {
+  // width: 100%;
+  margin-top: 0.7rem;
+  position: relative;
+}
+
+.block {
+  width: 50%;
+  border: 2px solid #efefef;
+  height: 27rem;
+}
+
+.titles {
+  position: absolute;
+  top: 2em;
+  margin-inline-start: 3em;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+
+  height: 75rem;
+  border-radius: 25px;
+  position: relative;
+}
+
+header {
+  .logo-img {
+    cursor: pointer;
+  }
+}
+
+.upper-header {
+  // background-image: url(/src/assets/HeroImagelg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 46px;
+  border-top-right-radius: 46px;
+  // border-radius: 25px;
+
+  width: 100%;
+  height: 50%;
+  .upper-header-content {
+    margin-block-start: 105px;
+  }
+  .logo-white {
+    background-color: white;
+    height: 40px;
+    width: 126px;
+    // -webkit-mask-image: url(/src/assets/CatwikiLogo.svg);
+    // mask-image: url(/src/assets/CatwikiLogo.svg);
+    background-repeat: no-repeat;
+  }
+  .upper-text {
+    font-family: Montserrat;
+    font-style: normal;
+    color: white;
+    letter-spacing: 0.2em;
+    line-height: 29px;
+    font-size: 1.4em;
+    text-align: start;
+  }
+}
+
+.below-header {
+  background-color: #e3e1dc;
+  height: 50%;
+  width: 100%;
+  border-bottom-left-radius: 46px;
+  border-bottom-right-radius: 46px;
+
+  .title-in {
+    font-weight: bold;
+    text-align: start;
+  }
+
+  .breeds-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .btn-more {
+    align-items: flex-end;
+  }
+  .cat-img-conatiner {
+    img {
+      width: rem(220px);
+      height: rem(220px);
+      object-fit: cover;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+  .breeds-title {
+    text-align: start;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #291507;
+  }
+
+  // border-radius: 25px;
+  //font color #291507
+  //see more color #73675c
+  //under cat pic color #291507
+}
+
+.lower-section {
+  margin-top: 4rem;
+  margin-bottom: 100px;
+  .info-container {
+    align-items: flex-start;
+    width: 50%;
+    justify-content: center;
+    gap: 20px;
+    .title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      margin: 0;
+      margin-bottom: 20px;
+
+      color: #291507;
+    }
+    .info-para {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #291507;
+    }
+  }
+  .img-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+    width: 50%;
+    gap: 40px;
+    img {
+      width: rem(220px);
+    }
+    .item-1 {
+      grid-column: 1/2;
+      width: rem(320px);
+    }
+    .item-3 {
+      grid-row: 2/2;
+      margin-left: 100px;
+      margin-top: -161px;
+    }
+  }
+}
+
+.small-line {
+  width: 59.18px;
+  height: 3.21px;
+  background: #4d270c;
+  border-radius: 77px;
+}
+
+footer {
+  background-color: #111;
+  color: #efefef;
+  margin-top: 20px;
+  height: 96px;
+  border-top-left-radius: 46px;
+  border-top-right-radius: 46px;
+  .logo-img-footer {
+    background-color: white;
+    margin-top: 6px;
+    height: 40px;
+    width: 127px;
+    // -webkit-mask-image: url(/src/assets/CatwikiLogo.svg);
+    // mask-image: url(/src/assets/CatwikiLogo.svg);
+    background-repeat: no-repeat;
+  }
+}
